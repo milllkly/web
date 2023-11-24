@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Services - Astana Water Delivery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Astana Water Delivery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <h2>Services Offered</h2>
+        <ul>
+            <li>Regular Water Delivery</li>
+            <li>Emergency Water Supply</li>
+            <li>Customized Water Solutions</li>
+        </ul>
+
+        <h2>Request a Service</h2>
+        <form id="serviceRequestForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="emailAddress">Email Address</label>
+                <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Telephone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your telephone number">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter your address">
+            </div>
+            <div class="form-group">
+                <label for="waterSize">Size of Water</label>
+                <select class="form-control" id="waterSize">
+                    <option>1 L Bottle</option>
+                    <option>19 L Bottled Water</option>
+                    <option>Dispenser</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" class="form-control" id="quantity" placeholder="Enter quantity required">
+            </div>
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information</label>
+                <textarea class="form-control" id="additionalInfo" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Request</button>
+        </form>
+    </div>
+
+   
+    <div id="chatPopup" class="chat-popup">
+        <div class="chat-content">
+            <p>Order now!</p>
+            <p>55-22-77</p>
+            <button id="closeChat">x</button>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 style="color: #003366;">About us</h5>
+                    <p>Providing top-quality water delivery services in Astana. Our commitment is to ensure timely and reliable water delivery for all our customers.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="color: #003366;">Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="color: #003366;">Contact us</h5>
+                    <p>Phone: +7 747 014 77 91</p>
+                    <p>Email: <a href="mailto:contact@astanawater.kz">contact@astanawater.kz</a></p>
+                    <p>Address: Kabanbay batyry 99, Astana</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+
+</body>
+</html>
